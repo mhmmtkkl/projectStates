@@ -9,7 +9,7 @@ public class CountriesTest {
     Counties c1 = new Counties();
 
     @Test
-    public void removeStringState1(){
+    public void countCountry1(){
 
         ArrayList<String> MyList = new ArrayList<>();
 
@@ -34,7 +34,7 @@ public class CountriesTest {
 
 
     @Test
-    public void removeStringState2(){
+    public void countCountry2(){
 
         ArrayList<String> MyList = new ArrayList<>();
 
@@ -58,7 +58,7 @@ public class CountriesTest {
     }
 
     @Test
-    public void removeStringState3(){
+    public void countCountryState3(){
 
         ArrayList<String> MyList = new ArrayList<>();
         MyList.add("England");
@@ -411,6 +411,101 @@ public class CountriesTest {
 
         }
 
+
+    }
+
+    @Test
+    public void smallestNumber1(){
+
+       int i1 =  c1.smallestNumber(5,3,2);
+
+       Assert.assertTrue(i1==2);
+
+    }
+
+
+    @Test
+    public void smallestNumber2(){
+
+        int i1 =  c1.smallestNumber(0,0,0);
+
+        Assert.assertTrue(i1==0);
+
+    }
+
+    @Test
+    public void smallestNumber3(){
+
+        int i1 =  c1.smallestNumber(10,12,10);
+
+        Assert.assertTrue(i1==10);
+
+    }
+
+
+    @Test
+    public void middleCharater1(){
+
+        char i1 =  c1.middleCharater("HeyDude");
+
+        Assert.assertTrue(i1=='D');
+
+    }
+
+    @Test
+    public void middleCharater2(){
+
+        char i1 =  c1.middleCharater("Cerry");
+
+        Assert.assertTrue(i1=='r');
+
+    }
+
+
+    @Test
+    public void middleCharater3(){
+
+        char i1 =  c1.middleCharater("Ring");
+
+        Assert.assertTrue(i1=='0');
+
+    }
+
+    @Test
+    public void dayoftheWeek1(){
+
+        String i1 =  c1.dayoftheWeek(1);
+
+        Assert.assertTrue(i1.equals("Monday"));
+
+    }
+
+
+    @Test
+    public void dayoftheWeek2(){
+
+        String i1 =  c1.dayoftheWeek(5);
+
+        Assert.assertTrue(i1.equals("Friday"));
+
+    }
+
+
+    @Test
+    public void dayoftheWeek3(){
+
+        String i1 =  c1.dayoftheWeek(0);
+
+        Assert.assertTrue(i1.equals("this is not a expected input"));
+
+    }
+
+    @Test
+    public void dayoftheWeek4(){
+
+        String i1 =  c1.dayoftheWeek(12);
+
+        Assert.assertTrue(i1.equals("this is not a expected input"));
 
     }
 
