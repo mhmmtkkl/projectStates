@@ -91,17 +91,23 @@ public class CountriesTest {
         MyList.add("South Africa");
         MyList.add("Brazil");
 
+
         ArrayList<String> result = c1.sortArrayList(MyList);
 
-        ArrayList<String> Expected = new ArrayList<>();
+        ArrayList<String> MyList2 = new ArrayList<>();
 
-        Collections.sort(Expected);
+        for(int i = 0 ; i<MyList.size()  ; i++){
+            MyList2.add(MyList.get(i));
+        }
 
-        for(int i = 0 ; i< Expected.size() ; i++){
+        Collections.sort(MyList2);
 
-            Assert.assertTrue(Expected.get(i).equals(result.get(i)));
+        for(int i = 0 ; i< MyList2.size() ; i++){
+
+            Assert.assertTrue(MyList2.get(i).equals(result.get(i)));
 
         }
+
 
 
     }
@@ -120,13 +126,17 @@ public class CountriesTest {
 
         ArrayList<String> result = c1.sortArrayList(MyList);
 
-        ArrayList<String> Expected = new ArrayList<>();
+        ArrayList<String> MyList2 = new ArrayList<>();
 
-        Collections.sort(Expected);
+        for(int i = 0 ; i<MyList.size()  ; i++){
+            MyList2.add(MyList.get(i));
+        }
 
-        for(int i = 0 ; i< Expected.size() ; i++){
+        Collections.sort(MyList2);
 
-            Assert.assertTrue(Expected.get(i).equals(result.get(i)));
+        for(int i = 0 ; i< MyList2.size() ; i++){
+
+            Assert.assertTrue(MyList2.get(i).equals(result.get(i)));
 
         }
 
